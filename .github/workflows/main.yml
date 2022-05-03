@@ -48,7 +48,7 @@ jobs:
         # ls -ald "$GITHUB_WORKSPACE"
         # whoami
         # sudo chown -R coq:coq "$GITHUB_WORKSPACE"/../../
-        sudo rm -r "@GITHUB_WORKSPACE" 
+        sudo rm -r "$GITHUB_WORKSPACE" 
         
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - name: checkout
