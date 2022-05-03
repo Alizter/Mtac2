@@ -48,7 +48,7 @@ jobs:
         ls -ald "$GITHUB_WORKSPACE"
         whoami
         sudo chown -R coq:coq "$GITHUB_WORKSPACE"
-        sudo chmod -R 777 "@GITHUB_WORKSPACE"/../_temp/
+        sudo chmod -R 777 "$GITHUB_WORKSPACE"/../_temp/
         ls -ald "$GITHUB_WORKSPACE"
         
     - run: |
