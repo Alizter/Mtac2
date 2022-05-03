@@ -45,6 +45,7 @@ jobs:
     
     - name: fix-permissions
       run: |
+        usermod -a -G coq 1001
         echo "$GITHUB_WORKSPACE"
         ls -ald "$GITHUB_WORKSPACE"
         whoami
