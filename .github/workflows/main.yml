@@ -47,8 +47,8 @@ jobs:
         echo "$GITHUB_WORKSPACE"
         ls -ald "$GITHUB_WORKSPACE"
         whoami
-        sudo chown -R coq:coq "$GITHUB_WORKSPACE"/../../
-        ls -ald "$GITHUB_WORKSPACE"/../../
+        sudo chown -R coq:coq "$GITHUB_WORKSPACE"
+        ls -ald "$GITHUB_WORKSPACE"
         
     - run: |
         echo ${{ github.workspace }}
